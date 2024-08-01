@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".gymkhana.fragment_gymkhana">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/frag_gymkhana_logo"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="100dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10sp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/gymkhana_logo"></ImageView>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:fontFamily="@font/roboto_light"
+                android:id="@+id/frag_gymkhana_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                app:layout_constraintTop_toBottomOf="@id/frag_gymkhana_logo"></TextView>
+
+            <ListView
+                android:id="@+id/frag_gymkhana_peopleinfo_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="5dp"
+                app:layout_constraintTop_toBottomOf="@id/frag_gymkhana_info"></ListView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/frag_gymkhana_concil_text1_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/md_green_400"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/frag_gymkhana_peopleinfo_list">
+
+                <TextView
+                    android:fontFamily="@font/urbanist"
+                    android:id="@+id/frag_gymkhana_concil_text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Presidential Council"
+                    android:textColor="@color/white"></TextView>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <GridView
+                android:id="@+id/frag_gymkhana_councils_grid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:horizontalSpacing="10dp"
+                android:numColumns="2"
+                android:verticalSpacing="10dp"
+                app:layout_constraintTop_toBottomOf="@id/frag_gymkhana_concil_text1_card"></GridView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="30dp"
+                android:id="@+id/frag_gymkhana_concil_text2_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/frag_gymkhana_councils_grid"
+                android:backgroundTint="@color/md_green_400"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:fontFamily="@font/urbanist"
+                    android:padding="5dp"
+                    android:id="@+id/frag_gymkhana_concil_text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Student Events"
+                    android:textColor="@color/white"
+                    ></TextView>
+            </androidx.cardview.widget.CardView>
+
+            <GridView
+                android:id="@+id/frag_gymkhana_fests_grid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:horizontalSpacing="10dp"
+                android:numColumns="2"
+                android:verticalSpacing="10dp"
+                app:layout_constraintTop_toBottomOf="@id/frag_gymkhana_concil_text2_card"></GridView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>

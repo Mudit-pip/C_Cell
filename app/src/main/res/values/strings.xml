@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">C-Cell</string>
+    <string name="default_web_client_id">325726298770-ulkk9v3faogf1t11668a6h5b5o7avqir.apps.googleusercontent.com</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

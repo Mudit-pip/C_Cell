@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/college"
+        android:title="College"
+        android:icon="@drawable/college_menuicon"/>
+
+    <item
+        android:id="@+id/gymkhana"
+        android:title="Gymkhana"
+        android:icon="@drawable/gymkhana_menuicon"/>
+
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/baseline_home_24"/>
+
+
+    <item
+        android:id="@+id/pyq"
+        android:title="PYQ's"
+        android:icon="@drawable/baseline_menu_book_24"/>
+
+    <item
+        android:id="@+id/ccell"
+        android:title="C-Cell"
+        android:icon="@drawable/ccell_menuicon"/>
+
+</menu>

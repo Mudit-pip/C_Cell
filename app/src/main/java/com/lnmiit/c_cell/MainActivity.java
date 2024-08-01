@@ -18,24 +18,24 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    String[] details = {"Report at your respective hostels.",
-            "Please move to the LT-9 or 10 and wait for your token to be called.",
-            "Once your token is called, please report at any of the desks present in front of LT -1 or  LT -2.",
-            "After getting your documents verified and stamped, move to LT-3 for collecting your college credentials.",
-            "After receiving your credentials, move to LT-4, to get your biometric data recorded.",
-    "After being done with ___, move to CP Lab 1 for filling out the anti ragging affidavit. Make sure you collect your ID card before you leave."};
-    String[] location = {"Boys: BH-1 \uD83D\uDCCD\nGirls: GH \uD83D\uDCCD\n",
-            "LT 9 and 10",
-            "LT 1 and LT2",
-            "LT3",
-            "LT4",
+    String[] details = {"Report at your respective hostels, and complete room allotment.",
+            "Once done with room allotment, please report at any of the desks present in front of LT-1 or LT-2 to get your document verification process started.\n" +
+                    "(In case of longer queues please wait in LT-10)",
+            "After getting your documents verified and stamped, move to LT-3 for collecting your college/ MIS credentials.",
+            "After receiving your MIS credentials, move to LT-9, to get your biometric data recorded with LUCS.",
+            "After being done with Biometric Data Collection, move to CP Lab-1 for filling out the anti ragging affidavit. Make sure you collect your ID card before you leave"};
+    String[] location = {"Boys: Boys Hostel-1 (BH-1)\nGirls: Girls Hostel (GH-1)",
+            "LT-1 and LT-2",
+            "LT-3 (In front of LT-2)",
+            "LT 9 ( to the building right of LT-2 )",
     "CP Lab - 1\nCP Lab - 2: On the first floor"};
     public double boyshostel_latitude = 26.93407280436765;
     public double boyshostel_longitude = 75.92304367055213;
     public double girlshostel_latitude = 26.935126004378677;
     public double girlshostel_longitude = 75.92261512944617;
-    Double[] latitude = {1.0, 26.93525776226133, 26.93567812127418, 26.935498185113538, 26.93559428485525, 26.936101625341077};
-    Double[] longitude = {1.0, 75.92399261608922, 75.92398267670698, 75.9238010608476, 75.92369054981872, 75.92411008639891};
+
+    Double[] latitude = {1.0, 26.935665645069452, 26.935612038730408, 26.93527805546171, 26.936101662184846};
+    Double[] longitude = {1.0, 75.92398087256326, 75.92383121095764, 75.92399993068679, 75.92410746255038};
 
     RecyclerView recyclerView;
     List<location_details> location_detailsList;
@@ -60,12 +60,11 @@ public class MainActivity extends AppCompatActivity {
     private void initdata() {
         location_detailsList = new ArrayList<>();
 
-        location_detailsList.add(new location_details(details[0], location[0], latitude[0], longitude[0], R.drawable.hostel_img));
-        location_detailsList.add(new location_details(details[1], location[1], latitude[1], longitude[1], R.drawable.token_collection_img));
-        location_detailsList.add(new location_details(details[2], location[2], latitude[2], longitude[2], R.drawable.doc_verification_img));
-        location_detailsList.add(new location_details(details[3], location[3], latitude[3], longitude[3], R.drawable.credidantials_img));
-        location_detailsList.add(new location_details(details[4], location[4], latitude[4], longitude[4], R.drawable.biometric_img));
-        location_detailsList.add(new location_details(details[5], location[5], latitude[5], longitude[5], R.drawable.antiragging_img));
+        location_detailsList.add(new location_details(details[0], location[0], latitude[0], longitude[0], R.drawable.hostel_regi));
+        location_detailsList.add(new location_details(details[1], location[1], latitude[1], longitude[1], R.drawable.document_final));
+        location_detailsList.add(new location_details(details[2], location[2], latitude[2], longitude[2], R.drawable.credidantials));
+        location_detailsList.add(new location_details(details[3], location[3], latitude[3], longitude[3], R.drawable.biometric_2));
+        location_detailsList.add(new location_details(details[4], location[4], latitude[4], longitude[4], R.drawable.antiragging));
     }
 
     private void setRecyclerView() {
