@@ -130,11 +130,15 @@ public class fragment_gymkhana extends Fragment {
                     emailid = new String[]{"21ucs020@lnmiit.ac.in", "21ucs055@lnmiit.ac.in"};
 
 
-//                    list.add("?raw=true");
+                    list.add("https://github.com/Counselling-Cell-LNMIIT/appResources/blob/main/FestImages/DESPORTIVOS/d1.png?raw=true");
+                    list.add("https://github.com/Counselling-Cell-LNMIIT/appResources/blob/main/FestImages/DESPORTIVOS/d2.jpg?raw=true");
+                    list.add("https://github.com/Counselling-Cell-LNMIIT/appResources/blob/main/FestImages/DESPORTIVOS/d3.jpg?raw=true");
+                    list.add("https://github.com/Counselling-Cell-LNMIIT/appResources/blob/main/FestImages/DESPORTIVOS/d4.jpg?raw=true");
+                    list.add("https://github.com/Counselling-Cell-LNMIIT/appResources/blob/main/FestImages/DESPORTIVOS/d5.jpg?raw=true");
 
-                    intent.putExtra("insta", "https://www.instagram.com/mediacell_lnmiit/");
-                    intent.putExtra("gmail", "mediacell@lnmiit.ac.in");
-                    intent.putExtra("youtube", "https://www.youtube.com/@mediacell-lnmiit");
+                    intent.putExtra("insta", "https://www.instagram.com/desportivos.lnmiit/");
+                    intent.putExtra("gmail", "desportivos@lnmiit.ac.in");
+                    intent.putExtra("youtube", "https://youtube.com/@desportivoslnmiit2733?si=YGfbd885DknCX6CB");
                 } else if (position == 3) {
                     //tedx
                     clubinfo = "TEDxLNMIIT is an independently organized TED event that brings the spirit of TED’s mission, “ideas worth spreading,” to our college. TEDxLNMIIT provides a platform for the community to share inspiring and thought-provoking ideas across various fields such as science, technology, art, and education. It's an event where speakers from diverse backgrounds come together to spark conversations, challenge conventional wisdom, and inspire innovative thinking.\n" +
@@ -150,9 +154,9 @@ public class fragment_gymkhana extends Fragment {
                     list.add("https://github.com/Counselling-Cell-LNMIIT/appResources/blob/main/FestImages/TEDx/t4.jpg?raw=true");
                     list.add("https://github.com/Counselling-Cell-LNMIIT/appResources/blob/main/FestImages/TEDx/t5.jpg?raw=true");
 
-                    intent.putExtra("insta", "https://www.instagram.com/rendition_lnmiit/?img_index=1");
-                    intent.putExtra("gmail", "rendition@lnmiit.ac.in");
-                    intent.putExtra("youtube", "https://www.youtube.com/@Rendition.lnmiit");
+                    intent.putExtra("insta", "https://www.instagram.com/tedxlnmiit/");
+                    intent.putExtra("gmail", ".");
+                    intent.putExtra("youtube", ".");
                 } else {
                     //esubmit
                     clubinfo = "E-Summit is a three-day event, started as an initiative for young entrepreneurs across the country. The Summit is more than just a platform for entrepreneurs and funding agencies to interact-it's a nexus for establishing connections among experienced and emerging startups led by the bright minds from participating institutes nationwide, seamlessly bridging the worlds of academia and industry stakeholders." +
@@ -172,9 +176,9 @@ public class fragment_gymkhana extends Fragment {
                     list.add("https://github.com/Counselling-Cell-LNMIIT/appResources/blob/main/FestImages/Esubmit/ne6.png?raw=true");
                     list.add("https://github.com/Counselling-Cell-LNMIIT/appResources/blob/main/FestImages/Esubmit/ne7.png?raw=true");
 
-                    intent.putExtra("insta", "https://www.instagram.com/insignia_lnm?igsh=MXgweWkxdmx5OG9lbg==");
-                    intent.putExtra("gmail", "insignia@lnmiit.ac.in");
-                    intent.putExtra("youtube", "https://www.youtube.com/@insignia6397");
+                    intent.putExtra("insta", ".");
+                    intent.putExtra("gmail", ".");
+                    intent.putExtra("youtube", ".");
                 }
 
                 intent.putStringArrayListExtra("imglist", list);
@@ -214,7 +218,7 @@ public class fragment_gymkhana extends Fragment {
 
     private void add_data_to_people_list() {
         String[] name = {"Mr. Vaibhav Khamesra", "Mr. Ashish Goyal", "Mr. Saransh Jindal"};
-        String[] designation = {"President", "Vise-President", "Finance Convener"};
+        String[] designation = {"President", "Vice-President", "Finance Convener"};
         String[] mobileno = {"7023659757", "6377079159", "8851625921"};
         String[] emailid = {"gym.president@lnmiit.ac.in", "ggym.vicepresident@lnmiit.ac.in", "gym.financeconvenor@lnmiit.ac.in"};
 

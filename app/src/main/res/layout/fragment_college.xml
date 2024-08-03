@@ -23,7 +23,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:fontFamily="monospace"
+                android:fontFamily="@font/urbanist"
                 android:text="Important Documents"
                 android:textColor="@color/white"
                 android:textSize="18dp"
@@ -45,7 +45,7 @@
                         android:layout_width="90dp"
                         android:layout_height="90dp"
                         android:layout_marginEnd="10dp"
-                        android:backgroundTint="#FFCBA6"
+                        android:backgroundTint="#A8CD9F"
                         app:cardCornerRadius="10dp"
                         app:cardElevation="4dp">
 
@@ -55,7 +55,7 @@
                             android:layout_gravity="center"
                             android:gravity="center"
                             android:text="Holiday Calendar"
-                            android:textColor="#F47725"
+                            android:textColor="@color/black"
                             android:textSize="16sp" />
 
                     </androidx.cardview.widget.CardView>
@@ -65,7 +65,7 @@
                         android:layout_width="90dp"
                         android:layout_height="90dp"
                         android:layout_marginEnd="10dp"
-                        android:backgroundTint="#C4B0FF"
+                        android:backgroundTint="#A8CD9F"
                         app:cardCornerRadius="10dp"
                         app:cardElevation="4dp">
 
@@ -75,7 +75,7 @@
                             android:layout_gravity="center"
                             android:gravity="center"
                             android:text="Bus Time Table"
-                            android:textColor="#5F3CC3"
+                            android:textColor="@color/black"
                             android:textSize="16sp" />
 
                     </androidx.cardview.widget.CardView>
@@ -85,7 +85,7 @@
                         android:layout_width="90dp"
                         android:layout_height="90dp"
                         android:layout_marginEnd="10dp"
-                        android:backgroundTint="#A6E6FF"
+                        android:backgroundTint="#A8CD9F"
                         app:cardCornerRadius="10dp"
                         app:cardElevation="4dp">
 
@@ -95,7 +95,7 @@
                             android:layout_gravity="center"
                             android:gravity="center"
                             android:text="Mess Menu"
-                            android:textColor="#30AEDA"
+                            android:textColor="@color/black"
                             android:textSize="16sp" />
 
                     </androidx.cardview.widget.CardView>
@@ -104,7 +104,7 @@
                         android:id="@+id/fragment_college_sop_card"
                         android:layout_width="90dp"
                         android:layout_height="90dp"
-                        android:backgroundTint="#FEB2C2"
+                        android:backgroundTint="#A8CD9F "
                         app:cardCornerRadius="10dp"
                         app:cardElevation="4dp">
 
@@ -114,7 +114,7 @@
                             android:layout_gravity="center"
                             android:gravity="center"
                             android:text="SOPs"
-                            android:textColor="#C1385C"
+                            android:textColor="@color/black"
                             android:textSize="16sp" />
 
                     </androidx.cardview.widget.CardView>
@@ -128,7 +128,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:fontFamily="monospace"
+                android:fontFamily="@font/urbanist"
                 android:text="Faculties"
                 android:textColor="@color/white"
                 android:textSize="18dp"
@@ -150,7 +150,7 @@
                         android:layout_width="90dp"
                         android:layout_height="90dp"
                         android:layout_marginEnd="10dp"
-                        android:backgroundTint="#FFCBA6"
+                        android:backgroundTint="#A8CD9F"
                         app:cardCornerRadius="10dp"
                         app:cardElevation="4dp">
 
@@ -160,7 +160,7 @@
                             android:layout_gravity="center"
                             android:gravity="center"
                             android:text="Important Contacts"
-                            android:textColor="#F47725"
+                            android:textColor="@color/black"
                             android:textSize="16sp" />
 
                     </androidx.cardview.widget.CardView>
@@ -170,7 +170,7 @@
                         android:layout_width="90dp"
                         android:layout_height="90dp"
                         android:layout_marginEnd="10dp"
-                        android:backgroundTint="#C4B0FF"
+                        android:backgroundTint="#A8CD9F"
                         app:cardCornerRadius="10dp"
                         app:cardElevation="4dp">
 
@@ -180,7 +180,7 @@
                             android:layout_gravity="center"
                             android:gravity="center"
                             android:text="HODs"
-                            android:textColor="#5F3CC3"
+                            android:textColor="@color/black"
                             android:textSize="16sp" />
 
                     </androidx.cardview.widget.CardView>
@@ -190,7 +190,7 @@
                         android:layout_width="90dp"
                         android:layout_height="90dp"
                         android:layout_marginEnd="10dp"
-                        android:backgroundTint="#A6E6FF"
+                        android:backgroundTint="#A8CD9F"
                         app:cardCornerRadius="10dp"
                         app:cardElevation="4dp">
 
@@ -200,7 +200,7 @@
                             android:layout_gravity="center"
                             android:gravity="center"
                             android:text="Head of Sections"
-                            android:textColor="#30AEDA"
+                            android:textColor="@color/black"
                             android:textSize="16sp" />
 
                     </androidx.cardview.widget.CardView>
@@ -209,7 +209,7 @@
                         android:id="@+id/fragment_college_hostelcontacts_card"
                         android:layout_width="90dp"
                         android:layout_height="90dp"
-                        android:backgroundTint="#FEB2C2"
+                        android:backgroundTint="#A8CD9F"
                         app:cardCornerRadius="10dp"
                         app:cardElevation="4dp">
 
@@ -219,7 +219,7 @@
                             android:layout_gravity="center"
                             android:gravity="center"
                             android:text="Hostel Contacts"
-                            android:textColor="#C1385C"
+                            android:textColor="@color/black"
                             android:textSize="16sp" />
 
                     </androidx.cardview.widget.CardView>
@@ -233,7 +233,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:fontFamily="monospace"
+                android:fontFamily="@font/urbanist"
                 android:text="Miscellaneous"
                 android:textColor="@color/white"
                 android:textSize="18dp"
@@ -255,7 +255,7 @@
                         android:layout_width="90dp"
                         android:layout_height="90dp"
                         android:layout_marginEnd="10dp"
-                        android:backgroundTint="#FFCBA6"
+                        android:backgroundTint="#A8CD9F"
                         app:cardCornerRadius="10dp"
                         app:cardElevation="4dp">
 
@@ -265,7 +265,7 @@
                             android:layout_gravity="center"
                             android:gravity="center"
                             android:text="Campus Map"
-                            android:textColor="#F47725"
+                            android:textColor="@color/black"
                             android:textSize="16sp" />
 
                     </androidx.cardview.widget.CardView>
@@ -275,7 +275,7 @@
                         android:layout_width="90dp"
                         android:layout_height="90dp"
                         android:layout_marginEnd="10dp"
-                        android:backgroundTint="#C4B0FF"
+                        android:backgroundTint="#A8CD9F"
                         app:cardCornerRadius="10dp"
                         app:cardElevation="4dp">
 
@@ -285,7 +285,7 @@
                             android:layout_gravity="center"
                             android:gravity="center"
                             android:text="Academic Area Map"
-                            android:textColor="#5F3CC3"
+                            android:textColor="@color/black"
                             android:textSize="16sp" />
 
                     </androidx.cardview.widget.CardView>
@@ -295,7 +295,7 @@
                         android:layout_width="90dp"
                         android:layout_height="90dp"
                         android:layout_marginEnd="10dp"
-                        android:backgroundTint="#A6E6FF"
+                        android:backgroundTint="#A8CD9F"
                         app:cardCornerRadius="10dp"
                         app:cardElevation="4dp">
 
@@ -305,7 +305,7 @@
                             android:layout_gravity="center"
                             android:gravity="center"
                             android:text="Curriculum"
-                            android:textColor="#30AEDA"
+                            android:textColor="@color/black"
                             android:textSize="16sp" />
 
                     </androidx.cardview.widget.CardView>
@@ -314,7 +314,7 @@
                         android:id="@+id/fragment_college_implinks_card"
                         android:layout_width="90dp"
                         android:layout_height="90dp"
-                        android:backgroundTint="#FEB2C2"
+                        android:backgroundTint="#A8CD9F"
                         app:cardCornerRadius="10dp"
                         app:cardElevation="4dp">
 
@@ -324,7 +324,7 @@
                             android:layout_gravity="center"
                             android:gravity="center"
                             android:text="Important Links"
-                            android:textColor="#C1385C"
+                            android:textColor="@color/black"
                             android:textSize="16sp" />
 
                     </androidx.cardview.widget.CardView>
@@ -339,7 +339,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:fontFamily="monospace"
+                android:fontFamily="@font/urbanist"
                 android:text="Director's Message"
                 android:textColor="@color/white"
                 android:textSize="18dp"

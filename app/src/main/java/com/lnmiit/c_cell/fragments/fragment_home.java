@@ -123,6 +123,7 @@ public class fragment_home extends Fragment {
     }
 
     private void fetchMessages() {
+        String URL = "https://notification-api-tau.vercel.app/messages";
         RequestQueue queue = Volley.newRequestQueue(getContext());
 
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(
@@ -136,7 +137,7 @@ public class fragment_home extends Fragment {
                             boolean isNewMessage = false;
                             for (int i = 0; i < messages.length(); i++) {
                                 JSONObject message = messages.getJSONObject(i);
-                                String text = message.getString("text");
+                                String text = message.getString("message");
                                 if (!messageTexts.contains(text)) {
                                     messageTexts.add(text);
                                     isNewMessage = true;
@@ -160,6 +161,47 @@ public class fragment_home extends Fragment {
 
         queue.add(jsonObjectRequest);
     }
+
+
+//
+//    private void fetchMessages() {
+//        RequestQueue queue = Volley.newRequestQueue(getContext());
+//
+//        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(
+//                Request.Method.GET, URL, null,
+//                new Response.Listener<JSONObject>() {
+//                    @Override
+//                    public void onResponse(JSONObject response) {
+//                        try {
+//                            JSONArray messages = response.getJSONArray("messages");
+//
+//                            boolean isNewMessage = false;
+//                            for (int i = 0; i < messages.length(); i++) {
+//                                JSONObject message = messages.getJSONObject(i);
+//                                String text = message.getString("text");
+//                                if (!messageTexts.contains(text)) {
+//                                    messageTexts.add(text);
+//                                    isNewMessage = true;
+//                                }
+//                            }
+//
+//                            if (isNewMessage) {
+//                                adapter.notifyDataSetChanged();
+//                            }
+//                        } catch (JSONException e) {
+//                            e.printStackTrace();
+//                        }
+//                    }
+//                },
+//                new Response.ErrorListener() {
+//                    @Override
+//                    public void onErrorResponse(VolleyError error) {
+//                        error.printStackTrace();
+//                    }
+//                });
+//
+//        queue.add(jsonObjectRequest);
+//    }
 
     @Override
     public void onDestroyView() {

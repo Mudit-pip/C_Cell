@@ -545,10 +545,10 @@ public class inside_council_gymkhana extends AppCompatActivity {
                         } else {
                             //ECell
                             clubinfo = "Future builders that are interested in learning about entrepreneurship, cryptocurrency, the stock market, web3, and several other fields come to this location for all of their learnings. They seek guidance in 5 major domains being event planning, marketing, management, sponsorship, content creation and designing which add up to create a well verse soft skill development and a variety of other subjects, all of which contribute to a child's holistic development and help him grow into a multi-talented adult.The exclusive club at our campus that collaborates with several Tech colleges across India is E-Cell, with its collaboration with Entrepreneurship Development Cell, IIT Roorkee, serving as a prominent example. We organize and participate in various funding events and interact closely with startup founders and make our members understand the crucial stages of start-up ecosystem.";
-                            name = new String[]{"", "", "", ""};
-                            designation = new String[]{"Coordinator", "Coordinator", "Coordinator", "Coordinator"};
-                            mobileno = new String[]{"", "", "", ""};
-                            emailid = new String[]{"", "", "", ""};
+                            name = new String[]{"Varun Ashok", "Yash Gautam"};
+                            designation = new String[]{"Coordinator", "Coordinator"};
+                            mobileno = new String[]{"7678445442", "9971776764"};
+                            emailid = new String[]{"21uec153@lnmiit.ac.in", "21ucs235@lnmiit.ac.in"};
 
                             list.add("https://github.com/Counselling-Cell-LNMIIT/appResources/blob/main/ClubImages/tech_clubs/E-CELL/ecell_1.jpg?raw=true");
                             list.add("https://github.com/Counselling-Cell-LNMIIT/appResources/blob/main/ClubImages/tech_clubs/E-CELL/ecell_2.jpg?raw=true");

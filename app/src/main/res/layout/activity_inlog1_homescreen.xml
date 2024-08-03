@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#211134"
+    android:background="#18122B"
     android:orientation="vertical"
     tools:context=".INLOG1_homescreen">
 
@@ -15,11 +15,12 @@
         android:layout_height="0dp"
         android:layout_weight="1"></androidx.viewpager2.widget.ViewPager2>
 
+<!--    #1B0E2A-->
     <nl.joery.animatedbottombar.AnimatedBottomBar
         android:id="@+id/bottom_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#1B0E2A"
+        android:background="#18122B"
         app:abb_indicatorAppearance="round"
         app:abb_indicatorColor="@color/white"
         app:abb_indicatorHeight="4dp"

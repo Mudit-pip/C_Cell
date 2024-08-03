@@ -49,6 +49,38 @@ public class inside_cosha extends AppCompatActivity {
         hostel_card = findViewById(R.id.cosha_hostel);
         mess_card = findViewById(R.id.cosha_mess);
 
+        canteen_card.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_SENDTO);
+                intent.setData(Uri.parse("mailto:cosha@lnmiit.ac.in"));
+                intent.putExtra(Intent.EXTRA_SUBJECT, "");
+                intent.putExtra(Intent.EXTRA_TEXT, "");
+                startActivity(intent);
+            }
+        });
+
+        hostel_card.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_SENDTO);
+                intent.setData(Uri.parse("mailto:cosha@lnmiit.ac.in"));
+                intent.putExtra(Intent.EXTRA_SUBJECT, "");
+                intent.putExtra(Intent.EXTRA_TEXT, "");
+                startActivity(intent);
+            }
+        });
+
+        mess_card.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_SENDTO);
+                intent.setData(Uri.parse("mailto:cosha@lnmiit.ac.in"));
+                intent.putExtra(Intent.EXTRA_SUBJECT, "");
+                intent.putExtra(Intent.EXTRA_TEXT, "");
+                startActivity(intent);
+            }
+        });
 
         main_info_lbl.setText(maintext);
 

@@ -298,15 +298,24 @@
     <color name="md_blue_grey_900">#263238</color>
 
 
-    <color name="custom_tile_orange">#FFCBA6</color>
-    <color name="custom_tile_purple">#C4B0FF</color>
-    <color name="custom_tile_blue">#A6E6FF</color>
-    <color name="custom_tile_red">#FEB2C2</color>
+<!--    <color name="custom_tile_orange">#FFCBA6</color>-->
+<!--    <color name="custom_tile_purple">#C4B0FF</color>-->
+<!--    <color name="custom_tile_blue">#A6E6FF</color>-->
+<!--    <color name="custom_tile_red">#FEB2C2</color>-->
 
-    <color name="custom_text_orange">#F47725</color>
-    <color name="custom_text_purple">#5F3CC3</color>
-    <color name="custom_text_blue">#30AEDA</color>
-    <color name="custom_text_red">#C1385C</color>
+    <color name="custom_tile_orange">#F6E6CB</color>
+    <color name="custom_tile_purple">#F6E6CB</color>
+    <color name="custom_tile_blue">#F6E6CB</color>
+    <color name="custom_tile_red">#F6E6CB</color>
 
-<!--    C4B0FF-->
+<!--    <color name="custom_text_orange">#F47725</color>-->
+<!--    <color name="custom_text_purple">#5F3CC3</color>-->
+<!--    <color name="custom_text_blue">#30AEDA</color>-->
+<!--    <color name="custom_text_red">#C1385C</color>-->
+
+    <color name="custom_text_orange">#000000</color>
+    <color name="custom_text_purple">#000000</color>
+    <color name="custom_text_blue">#000000</color>
+    <color name="custom_text_red">#000000</color>
+
 </resources>

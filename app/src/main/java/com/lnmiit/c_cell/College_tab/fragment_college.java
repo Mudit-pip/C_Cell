@@ -2,14 +2,13 @@ package com.lnmiit.c_cell.College_tab;
 
 import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.cardview.widget.CardView;
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import androidx.cardview.widget.CardView;
+import androidx.fragment.app.Fragment;
 
 import com.lnmiit.c_cell.PDF_display;
 import com.lnmiit.c_cell.R;
@@ -156,10 +155,11 @@ public class fragment_college extends Fragment {
         campusmap_card.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getContext(), PDF_display.class);
-                intent.putExtra("pdfUrl", "https://github.com/Counselling-Cell-LNMIIT/appResources/blob/main/pdf/CampusAreamap.pdf?raw=true");
-                intent.putExtra("operation", 1);
-                startActivity(intent);
+                startActivity(new Intent(getContext(), Campusmap_image.class));
+//                Intent intent = new Intent(getContext(), PDF_display.class);
+//                intent.putExtra("pdfUrl", "https://github.com/Counselling-Cell-LNMIIT/appResources/blob/main/pdf/CampusAreamap.pdf?raw=true");
+//                intent.putExtra("operation", 1);
+//                startActivity(intent);
             }
         });
 

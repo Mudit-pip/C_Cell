@@ -59,7 +59,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:backgroundTint="@color/md_green_400"
+                android:backgroundTint="#40534C"
                 app:cardCornerRadius="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -71,7 +71,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:padding="5dp"
+                    android:padding="8dp"
                     android:text="Presidential Council"
                     android:textColor="@color/white"></TextView>
 
@@ -82,7 +82,7 @@
                 android:id="@+id/frag_gymkhana_councils_grid"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="15dp"
                 android:horizontalSpacing="10dp"
                 android:numColumns="2"
                 android:verticalSpacing="10dp"
@@ -95,14 +95,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toBottomOf="@id/frag_gymkhana_councils_grid"
-                android:backgroundTint="@color/md_green_400"
+                android:backgroundTint="#40534C"
                 app:cardCornerRadius="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent">
 
                 <TextView
                     android:fontFamily="@font/urbanist"
-                    android:padding="5dp"
+                    android:padding="8dp"
                     android:id="@+id/frag_gymkhana_concil_text2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -116,7 +116,7 @@
                 android:id="@+id/frag_gymkhana_fests_grid"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="15dp"
                 android:horizontalSpacing="10dp"
                 android:numColumns="2"
                 android:verticalSpacing="10dp"

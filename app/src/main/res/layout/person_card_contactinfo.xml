@@ -4,7 +4,7 @@
     android:layout_height="wrap_content"
     android:layout_margin="15dp"
     app:cardCornerRadius="15dp"
-    android:backgroundTint="#4D2977"
+    android:backgroundTint="#40534C"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -29,7 +29,7 @@
             android:textColor="@color/white"
             app:layout_constraintTop_toBottomOf="@id/personname"
             app:layout_constraintStart_toStartOf="parent"
-            android:fontFamily="@font/montserrat_variablefont"
+            android:fontFamily="@font/roboto_light"
             android:textSize="12dp"
             android:id="@+id/person_designation"
             android:text="Designation"

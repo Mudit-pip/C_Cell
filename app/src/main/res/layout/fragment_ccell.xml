@@ -70,7 +70,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:fontFamily="monospace"
+                android:fontFamily="@font/urbanist"
                 android:text="Coordinators: Y-22"
                 android:textColor="@color/white"
                 android:textSize="18dp"
@@ -87,10 +87,10 @@
                 app:layout_constraintTop_toBottomOf="@id/frag_ccell_coordi_txt">
 
                 <LinearLayout
-                    android:layout_marginLeft="-10dp"
                     android:id="@+id/card_container"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:layout_marginLeft="-10dp"
                     android:orientation="horizontal"
                     android:padding="10dp">
 
@@ -102,9 +102,9 @@
                         app:cardCornerRadius="20dp">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
-                            android:background="@color/custom_tile_orange"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:background="@color/custom_tile_orange"
                             android:padding="10dp">
 
                             <androidx.cardview.widget.CardView
@@ -128,8 +128,10 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="8sp"
+                                android:fontFamily="@font/urbanist"
                                 android:gravity="center"
                                 android:text="Naman Agarwal"
+                                android:textColor="@color/black"
                                 android:textSize="14sp"
                                 app:layout_constraintBottom_toTopOf="@+id/ccell_cont1"
                                 app:layout_constraintEnd_toEndOf="parent"
@@ -137,27 +139,27 @@
                                 app:layout_constraintTop_toBottomOf="@id/cordie_card_image1" />
 
                             <LinearLayout
+                                android:id="@+id/ccell_cont1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
                                 android:layout_marginTop="10dp"
                                 android:gravity="center"
-                                android:id="@+id/ccell_cont1"
                                 app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintTop_toBottomOf="@id/name1"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
+                                app:layout_constraintTop_toBottomOf="@id/name1">
 
-                                <ImageView
-                                    android:id="@+id/mail1"
-                                    android:src="@drawable/gmail_icon"
-                                    android:layout_width="25dp"
-                                    android:layout_height="25dp"></ImageView>
 
                                 <ImageView
                                     android:id="@+id/call1"
-                                    android:layout_marginLeft="20dp"
-                                    android:src="@drawable/phone_call_image"
                                     android:layout_width="25dp"
-                                    android:layout_height="25dp"></ImageView>
+                                    android:layout_height="25dp"
+                                    android:src="@drawable/phone_call_image"></ImageView>
 
+                                <ImageView
+                                    android:id="@+id/mail1"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:src="@drawable/gmail_icon"></ImageView>
                             </LinearLayout>
                         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -172,9 +174,9 @@
                         app:cardCornerRadius="20dp">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
-                            android:background="@color/custom_tile_purple"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:background="@color/custom_tile_purple"
                             android:padding="10dp">
 
                             <androidx.cardview.widget.CardView
@@ -198,8 +200,10 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="8sp"
+                                android:fontFamily="@font/urbanist"
                                 android:gravity="center"
                                 android:text="Harshita Sharma"
+                                android:textColor="@color/black"
                                 android:textSize="14sp"
                                 app:layout_constraintBottom_toTopOf="@id/ccell_cont2"
                                 app:layout_constraintEnd_toEndOf="parent"
@@ -207,26 +211,28 @@
                                 app:layout_constraintTop_toBottomOf="@id/cordie_card_image2" />
 
                             <LinearLayout
+                                android:id="@+id/ccell_cont2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
                                 android:layout_marginTop="10dp"
                                 android:gravity="center"
-                                android:id="@+id/ccell_cont2"
                                 app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintTop_toBottomOf="@id/name2"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
+                                app:layout_constraintTop_toBottomOf="@id/name2">
 
-                                <ImageView
-                                    android:id="@+id/mail2"
-                                    android:src="@drawable/gmail_icon"
-                                    android:layout_width="25dp"
-                                    android:layout_height="25dp"></ImageView>
 
                                 <ImageView
                                     android:id="@+id/call2"
-                                    android:layout_marginLeft="20dp"
-                                    android:src="@drawable/phone_call_image"
                                     android:layout_width="25dp"
-                                    android:layout_height="25dp"></ImageView>
+                                    android:layout_height="25dp"
+                                    android:src="@drawable/phone_call_image"></ImageView>
+
+
+                                <ImageView
+                                    android:id="@+id/mail2"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:src="@drawable/gmail_icon"></ImageView>
 
                             </LinearLayout>
 
@@ -243,9 +249,9 @@
                         app:cardCornerRadius="20dp">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
-                            android:background="@color/custom_tile_blue"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:background="@color/custom_tile_blue"
                             android:padding="10dp">
 
                             <androidx.cardview.widget.CardView
@@ -269,8 +275,10 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="8sp"
+                                android:fontFamily="@font/urbanist"
                                 android:gravity="center"
                                 android:text="Arpit Joshi"
+                                android:textColor="@color/black"
                                 android:textSize="14sp"
                                 app:layout_constraintBottom_toTopOf="@id/ccell_cont3"
                                 app:layout_constraintEnd_toEndOf="parent"
@@ -278,26 +286,27 @@
                                 app:layout_constraintTop_toBottomOf="@id/cordie_card_image3" />
 
                             <LinearLayout
+                                android:id="@+id/ccell_cont3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
                                 android:layout_marginTop="10dp"
                                 android:gravity="center"
-                                android:id="@+id/ccell_cont3"
                                 app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintTop_toBottomOf="@id/name3"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-
-                                <ImageView
-                                    android:id="@+id/mail3"
-                                    android:src="@drawable/gmail_icon"
-                                    android:layout_width="25dp"
-                                    android:layout_height="25dp"></ImageView>
+                                app:layout_constraintTop_toBottomOf="@id/name3">
 
                                 <ImageView
                                     android:id="@+id/call3"
-                                    android:layout_marginLeft="20dp"
-                                    android:src="@drawable/phone_call_image"
                                     android:layout_width="25dp"
-                                    android:layout_height="25dp"></ImageView>
+                                    android:layout_height="25dp"
+                                    android:src="@drawable/phone_call_image"></ImageView>
+
+                                <ImageView
+                                    android:id="@+id/mail3"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:src="@drawable/gmail_icon"></ImageView>
+
 
                             </LinearLayout>
 
@@ -317,7 +326,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:fontFamily="monospace"
+                android:fontFamily="@font/urbanist"
                 android:text="Convener's Message"
                 android:textColor="@color/white"
                 android:textSize="18dp"
@@ -339,6 +348,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:fontFamily="@font/roboto_light"
                     android:gravity="center_vertical"
                     android:textColor="@color/white"
                     android:textSize="13sp" />
@@ -370,6 +380,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:fontFamily="@font/roboto_light"
                         android:text="Dr. Usha Kanoongo"
                         android:textColor="@color/white"
                         android:textSize="14sp" />
@@ -381,6 +392,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto_light"
                 android:gravity="center_vertical"
                 android:textColor="@color/white"
                 android:textSize="13sp"
@@ -393,7 +405,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:fontFamily="monospace"
+                android:fontFamily="@font/urbanist"
                 android:text="Team Mentors: Y-21"
                 android:textColor="@color/white"
                 android:textSize="18dp"
@@ -410,9 +422,9 @@
                 app:layout_constraintTop_toBottomOf="@id/frag_ccell_mentor_txt">
 
                 <LinearLayout
-                    android:layout_marginLeft="-10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:layout_marginLeft="-10dp"
                     android:orientation="horizontal"
                     android:padding="10dp">
 
@@ -424,9 +436,9 @@
                         app:cardCornerRadius="20dp">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
-                            android:background="@color/custom_tile_orange"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:background="@color/custom_tile_orange"
                             android:padding="10dp">
 
                             <androidx.cardview.widget.CardView
@@ -449,8 +461,10 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="8sp"
+                                android:fontFamily="@font/urbanist"
                                 android:gravity="center"
                                 android:text="Aviral Jain"
+                                android:textColor="@color/black"
                                 android:textSize="14sp"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
@@ -469,9 +483,9 @@
                         app:cardCornerRadius="20dp">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
-                            android:background="@color/custom_tile_purple"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:background="@color/custom_tile_purple"
                             android:padding="10dp">
 
                             <androidx.cardview.widget.CardView
@@ -494,8 +508,10 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="8sp"
+                                android:fontFamily="@font/urbanist"
                                 android:gravity="center"
                                 android:text="Keshav Aggarwal"
+                                android:textColor="@color/black"
                                 android:textSize="14sp"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
@@ -514,9 +530,9 @@
                         app:cardCornerRadius="20dp">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
-                            android:background="@color/custom_tile_blue"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:background="@color/custom_tile_blue"
                             android:padding="10dp">
 
                             <androidx.cardview.widget.CardView
@@ -539,8 +555,10 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="8sp"
+                                android:fontFamily="@font/urbanist"
                                 android:gravity="center"
                                 android:text="Ritik Goyal"
+                                android:textColor="@color/black"
                                 android:textSize="14sp"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
@@ -559,9 +577,9 @@
                         app:cardCornerRadius="20dp">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
-                            android:background="@color/custom_tile_red"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:background="@color/custom_tile_red"
                             android:padding="10dp">
 
                             <androidx.cardview.widget.CardView
@@ -584,8 +602,10 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="8sp"
+                                android:fontFamily="@font/urbanist"
                                 android:gravity="center"
                                 android:text="Saloni Jain"
+                                android:textColor="@color/black"
                                 android:textSize="14sp"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
@@ -602,14 +622,13 @@
             </HorizontalScrollView>
 
 
-
             <TextView
                 android:id="@+id/frag_ccell_assocordi_txt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:fontFamily="monospace"
-                android:text="Associate Coorinators: Y-22"
+                android:fontFamily="@font/urbanist"
+                android:text="Associate Coordinators: Y-22"
                 android:textColor="@color/white"
                 android:textSize="18dp"
                 android:textStyle="bold"
@@ -624,9 +643,9 @@
                 app:layout_constraintTop_toBottomOf="@id/frag_ccell_assocordi_txt">
 
                 <LinearLayout
-                    android:layout_marginLeft="-10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:layout_marginLeft="-10dp"
                     android:orientation="horizontal"
                     android:padding="10dp">
 
@@ -638,9 +657,9 @@
                         app:cardCornerRadius="20dp">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
-                            android:background="@color/custom_tile_orange"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:background="@color/custom_tile_orange"
                             android:padding="10dp">
 
                             <androidx.cardview.widget.CardView
@@ -663,8 +682,10 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="8sp"
+                                android:fontFamily="@font/urbanist"
                                 android:gravity="center"
                                 android:text="Abhinav Singh"
+                                android:textColor="@color/black"
                                 android:textSize="14sp"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
@@ -683,9 +704,9 @@
                         app:cardCornerRadius="20dp">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
-                            android:background="@color/custom_tile_purple"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:background="@color/custom_tile_purple"
                             android:padding="10dp">
 
                             <androidx.cardview.widget.CardView
@@ -708,8 +729,10 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="8sp"
+                                android:fontFamily="@font/urbanist"
                                 android:gravity="center"
                                 android:text="Guneeth garg"
+                                android:textColor="@color/black"
                                 android:textSize="14sp"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
@@ -728,9 +751,9 @@
                         app:cardCornerRadius="20dp">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
-                            android:background="@color/custom_tile_blue"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:background="@color/custom_tile_blue"
                             android:padding="10dp">
 
                             <androidx.cardview.widget.CardView
@@ -753,8 +776,10 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="8sp"
+                                android:fontFamily="@font/urbanist"
                                 android:gravity="center"
                                 android:text="Nemil Kamdar"
+                                android:textColor="@color/black"
                                 android:textSize="14sp"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
@@ -773,9 +798,9 @@
                         app:cardCornerRadius="20dp">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
-                            android:background="@color/custom_tile_red"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:background="@color/custom_tile_red"
                             android:padding="10dp">
 
                             <androidx.cardview.widget.CardView
@@ -798,8 +823,10 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="8sp"
+                                android:fontFamily="@font/urbanist"
                                 android:gravity="center"
                                 android:text="Sanidhya Balwda"
+                                android:textColor="@color/black"
                                 android:textSize="14sp"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
@@ -819,9 +846,9 @@
                         app:cardCornerRadius="20dp">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
-                            android:background="@color/custom_tile_orange"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:background="@color/custom_tile_orange"
                             android:padding="10dp">
 
                             <androidx.cardview.widget.CardView
@@ -844,8 +871,10 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="8sp"
+                                android:fontFamily="@font/urbanist"
                                 android:gravity="center"
                                 android:text="Tanvi Bansal"
+                                android:textColor="@color/black"
                                 android:textSize="14sp"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
@@ -865,9 +894,9 @@
                         app:cardCornerRadius="20dp">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
-                            android:background="@color/custom_tile_purple"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:background="@color/custom_tile_purple"
                             android:padding="10dp">
 
                             <androidx.cardview.widget.CardView
@@ -890,8 +919,10 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="8sp"
+                                android:fontFamily="@font/urbanist"
                                 android:gravity="center"
                                 android:text="Yash Sharma"
+                                android:textColor="@color/black"
                                 android:textSize="14sp"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
@@ -913,7 +944,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:fontFamily="monospace"
+                android:fontFamily="@font/urbanist"
                 android:text="App Developer"
                 android:textColor="@color/white"
                 android:textSize="18dp"
@@ -924,32 +955,32 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/appdev_card"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/frag_ccell_dev_txt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                app:cardCornerRadius="20dp">
+                app:cardCornerRadius="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/frag_ccell_dev_txt">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:background="@color/custom_tile_orange"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:background="@color/custom_tile_orange"
                     android:padding="10dp">
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/dev_img1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:cardCornerRadius="100dp"
                         android:layout_marginLeft="20dp"
+                        app:cardCornerRadius="100dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent">
 
                         <ImageView
-                            android:layout_width="100dp"
-                            android:layout_height="100dp"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/mudit_img" />
                     </androidx.cardview.widget.CardView>
@@ -958,17 +989,18 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8sp"
+                        android:fontFamily="@font/urbanist"
                         android:gravity="center"
                         android:text="Mudit Choudhary"
+                        android:textColor="@color/black"
                         android:textSize="14sp"
-                        app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toEndOf="@id/dev_img1"
-                        app:layout_constraintEnd_toEndOf="parent"/>
+                        app:layout_constraintTop_toTopOf="parent" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
             </androidx.cardview.widget.CardView>
-
 
 
             <TextView
@@ -976,7 +1008,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:fontFamily="monospace"
+                android:fontFamily="@font/urbanist"
                 android:text="API Developer"
                 android:textColor="@color/white"
                 android:textSize="18dp"
@@ -987,33 +1019,33 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/apidev_card"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/frag_ccell_devapi_txt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                app:cardCornerRadius="20dp">
+                app:cardCornerRadius="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/frag_ccell_devapi_txt">
 
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:background="@color/custom_tile_purple"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:background="@color/custom_tile_purple"
                     android:padding="10dp">
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/dev_img2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:cardCornerRadius="100dp"
                         android:layout_marginLeft="20dp"
+                        app:cardCornerRadius="100dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent">
 
                         <ImageView
-                            android:layout_width="100dp"
-                            android:layout_height="100dp"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/sanskriti_img" />
                     </androidx.cardview.widget.CardView>
@@ -1022,18 +1054,69 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8sp"
+                        android:fontFamily="@font/urbanist"
                         android:gravity="center"
                         android:text="Sanskriti Arora"
+                        android:textColor="@color/black"
                         android:textSize="14sp"
-                        app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toEndOf="@id/dev_img2"
-                        app:layout_constraintEnd_toEndOf="parent"/>
+                        app:layout_constraintTop_toTopOf="parent" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
             </androidx.cardview.widget.CardView>
 
 
+            <androidx.cardview.widget.CardView
+                android:id="@+id/apidev_card2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/apidev_card">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/custom_tile_purple"
+                    android:padding="10dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/dev_img3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        app:cardCornerRadius="100dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/lakshya_img" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8sp"
+                        android:fontFamily="@font/urbanist"
+                        android:gravity="center"
+                        android:text="Lakshya Jain"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/dev_img3"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
 
 
             <TextView
@@ -1041,44 +1124,44 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:fontFamily="monospace"
+                android:fontFamily="@font/urbanist"
                 android:text="UI/UX"
                 android:textColor="@color/white"
                 android:textSize="18dp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/apidev_card"></TextView>
+                app:layout_constraintTop_toBottomOf="@id/apidev_card2"></TextView>
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/uiux_card"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/frag_ccell_uiux_txt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                app:cardCornerRadius="20dp">
+                app:cardCornerRadius="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/frag_ccell_uiux_txt">
 
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:background="@color/custom_tile_blue"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:background="@color/custom_tile_blue"
                     android:padding="10dp">
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/dev_img3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:cardCornerRadius="100dp"
                         android:layout_marginLeft="20dp"
+                        app:cardCornerRadius="100dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent">
 
                         <ImageView
-                            android:layout_width="100dp"
-                            android:layout_height="100dp"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
                             android:scaleType="fitXY"
                             android:src="@drawable/kriti_img" />
                     </androidx.cardview.widget.CardView>
@@ -1087,25 +1170,27 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8sp"
+                        android:fontFamily="@font/urbanist"
                         android:gravity="center"
                         android:text="Kriti Jindal"
+                        android:textColor="@color/black"
                         android:textSize="14sp"
-                        app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toEndOf="@id/dev_img3"
-                        app:layout_constraintEnd_toEndOf="parent"/>
+                        app:layout_constraintTop_toTopOf="parent" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
             </androidx.cardview.widget.CardView>
 
             <Button
-                android:layout_marginTop="20dp"
-                app:layout_constraintTop_toBottomOf="@id/uiux_card"
                 android:id="@+id/ccell_signoutbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
                 android:backgroundTint="@color/md_red_400"
                 android:text="Sign Out"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"></Button>
+                app:layout_constraintTop_toBottomOf="@id/uiux_card"></Button>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

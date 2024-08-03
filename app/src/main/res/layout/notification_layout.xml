@@ -10,10 +10,11 @@
         android:layout_marginLeft="1dp"
         android:layout_marginTop="3dp"
         android:layout_marginRight="1dp"
-        android:backgroundTint="@color/md_blue_grey_200"
+        android:backgroundTint="@color/md_blue_grey_700"
         app:cardCornerRadius="13dp">
 
         <TextView
+            android:textColor="@color/white"
             android:id="@+id/notification_text"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

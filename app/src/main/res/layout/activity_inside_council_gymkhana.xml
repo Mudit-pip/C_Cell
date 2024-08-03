@@ -20,6 +20,8 @@
             android:layout_height="wrap_content">
 
             <androidx.cardview.widget.CardView
+                android:backgroundTint="@color/white"
+                android:background="@color/white"
                 android:id="@+id/frag_gymkhana_logo"
                 android:layout_width="150dp"
                 android:layout_height="150dp"

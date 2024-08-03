@@ -21,13 +21,11 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.lnmiit.c_cell.ListViewUtil;
 import com.lnmiit.c_cell.R;
-import com.lnmiit.c_cell.gymkhana.fragment_gymkhana;
 
 public class Contacts_display extends AppCompatActivity {
 
-    ListView  list;
+    ListView list;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,17 +56,29 @@ public class Contacts_display extends AppCompatActivity {
 //        op == 1 means HOD's
 //        op == 2 means Head of Sections
 //        op == 3 means Hostel Contacts
-        if(op == 0){
-            name = new String[]{"imp contact 1", "name 2", "name 3"};
-            designation = new String[]{"Designation 1", "des 2", "des 3"};
-            mobileno = new String[]{"1234567890", "234567890", "1234567890"};
-            emailid = new String[]{"jgdgs@gmail.com", "ghedhbjn@gmail.com", "szfdghj"};
-        } else if(op == 1) {
+        if (op == 0) {
+            name = new String[]{"Rahul Banerjee",
+                    "Dr. Nikhil Sharma",
+                    "Mr. Rajeev Saxena",
+                    "Mr. Devaram Rabari",
+                    "Mr. Samar Singh", "Dr. Chand Singh Panwar"};
+            designation = new String[]{"Director",
+                    "Assistant Dean of Academic Affairs",
+                    "Assistant Registrar - Academic",
+                    "Finance Assistant",
+                    "Assistant Registrar", "Resident Doctor"};
+            mobileno = new String[]{"3526002",
+                    "3526012",
+                    "3526051",
+                    "3526102",
+                    "3526132", "3526100"};
+            emailid = new String[]{".", ".", ".", ".", ".", "."};
+        } else if (op == 1) {
             name = new String[]{"Dr. Jayprakash Kar", "Dr. Sunil kumar", "Dr. Nikhil Sharma", "Dr. Mohit Makkar", "Dr. Ashok Garai", "Dr. Manish Garg", "Dr. Surinder Singh Nehra"};
             designation = new String[]{"CSE", "CCE", "ECE", "Mechanical", "Physics", "Mathematics", "Humanities and Social Sciences"};
             mobileno = new String[]{"0141-3526212", "0141-3526227", "0141-3526318", "0141-3526360", "0141-3526387", "0141-3526269", "0141-3526294"};
             emailid = new String[]{"jayaprakashkar@lnmiit.ac.in", "sunil@lnmiit.ac.in", "nikhil.sharma@lnmiit.ac.in", "mohit.makkar@lnmiit.ac.in", "ashok.garai@lnmiit.ac.in", "manishgarg@lnmiit.ac.on", "surinder.nehra@lnmiit.ac.in"};
-        } else if(op == 2){
+        } else if (op == 2) {
             name = new String[]{"Ashok Kumar Salecha", "Ajeet Singh Rawat", "Raghuveer Singh Charan"};
             designation = new String[]{"Finance and Purchase Officer", "Assistant Registrar", "Sports Officer"};
             mobileno = new String[]{"0141-3526101", "0141-3526032", "0141-3526136"};
@@ -134,9 +144,16 @@ public class Contacts_display extends AppCompatActivity {
                 }
             });
 
+            if(mEmailid[position].equals(".")){
+                vholder.mail_img.setVisibility(View.GONE);
+            } else {
+                vholder.mail_img.setVisibility(View.VISIBLE);
+            }
+
             vholder.mail_img.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                    vholder.mail_img.setVisibility(View.VISIBLE);
                     Intent intent = new Intent(Intent.ACTION_SENDTO);
                     intent.setData(Uri.parse("mailto:" + mEmailid[position]));
                     intent.putExtra(Intent.EXTRA_SUBJECT, "");
